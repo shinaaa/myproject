@@ -1,0 +1,68 @@
+#main{
+  min-height:65vh
+}
+#tbl{
+  width:1000px;
+  margin:20px auto;
+  border-collapse: collapse;
+}
+thead td:first-child{
+  width:100px;
+  font-size:16px;
+  font-weight:normal;
+  color:#101010;
+}
+#tbl td{
+  text-align: center;
+  vertical-align:middle;
+}
+.products{
+  width:300px;
+}
+thead td{
+  height:40px;
+  color:#3B000D;
+  font-weight:bold;
+  font-size:17px;
+  padding:5px 0;
+  margin:0;
+}
+thead{  
+  background:linear-gradient(to bottom,#A39591,#5F504E)  
+}
+#tbd td{
+  padding:10px 0;
+}
+#tbd tr{
+  border:1px solid #122b40;
+  border-top:none;
+}
+.pro-img>img{
+  position: relative;
+  left:-30px;
+  cursor:pointer;
+  width:80px;
+  height:80px;
+}
+.title{
+  position: relative;
+  bottom:30px;
+  left:-10px;
+}
+input.count{
+  width:50px;
+  height:28px;
+  padding-left:5px;
+  border:1px solid #A9A9A9;
+}
+input.count:focus{
+  outline:none;
+  border:1px solid #000;
+}
+span.minus,span.add{
+  cursor:pointer;
+  /* display:inline-block; */
+  font-size:20px;
+  font-weight:bold;
+  padding:5px;
+}

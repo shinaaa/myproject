@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ch-en">
+ <head>
+  <meta charset="UTF-8">
+  <title>flower❀whisper购物车</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/00575aeeddb20ce.jpg">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/shoppingcart.css">
+ </head>
+ <body>
+  <header id="head"></header>
+	<div id="main">
+		<div class="abc">
+			<div class="list">我的购物车</div>
+			<div class="clear-all">清空购物车</div>
+			<p>
+				<input type="checkbox" id="ckbAll"> <label for="ckbAll">全选</label>
+			</p>
+			<ul class="intr">
+				<li>商品</li>
+				<li>单价</li>
+				<li>数量</li>
+				<li>小计</li>
+				<li>操作</li>
+			</ul>
+		</div>
+		<div class="pro-list">
+			<div class="nothing hide"></div>
+			<!-- 动态加载 -->
+		</div>
+		<div class="total">
+			<p class="totalcount">共选择了 <span>0</span> 件商品</p>
+			总价：¥ <span>0.00</span>
+			<a data-pay="pay" href="">结算</a>
+			<div class="order">	
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	<footer id="foot"></footer>
+	<script src="js/ajax.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+	<script src="js/cart.js"></script>
+ </body>
+</html>

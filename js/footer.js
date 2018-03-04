@@ -1,0 +1,3 @@
+$(()=>{
+	$("#foot").load("footer.html")
+})

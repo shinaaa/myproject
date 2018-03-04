@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ch-en">
+ <head>
+  <meta charset="UTF-8">
+  <title>用户中心</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/usercenter.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo/00575aeeddb20ce.jpg">
+ </head>
+ <body>
+  <header id="head"></header>
+	<div id="main">
+		<div class="up">
+			<div class="left">
+				<div class="avtar"></div>
+				<div class="avtar-mask">修改头像</div>
+				<div class="my-info">
+					<p class="uname">用户名：<span></span></p>
+					<p class="edit-info">编辑个人资料</p>
+					<p class="address">地址管理</p>
+					<p class="order">订单管理</p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="balance">
+					<p><img src="images/logo/ac_balance.png" alt=""></p>
+					<p>余额：¥ <span>0</span></p>
+					<a href="" class="recharge">在线充值</a>
+				</div>
+				<div class="coupon">
+					<p><img src="images/logo/ac_coupon.png" alt=""></p>
+					<p>优惠券：0张可用</p>
+				</div>
+				<div class="card">
+					<p><img src="images/logo/ac_card.png" alt=""></p>
+					<p>代金卡：0张已用</p>
+				</div>
+			</div>
+		</div>
+		<div class="edit">
+			<span class="close">x</span>
+			<form>
+				<p>
+					<label>邮箱：</label><input type="email" name="email" class="email">
+				</p>
+				<p>
+					<label>手机：</label><input type="phone" name="phone" class="phone">
+				</p>
+				<p>
+					注册时间：<span class="reg_time"></span>
+				</p>
+				<a class="confirm-info" href="">确定修改</a>
+			</form>
+		</div>
+		<div class="pro-city">
+			<span class="close">x</span>
+			<form action="">
+				<span>请选择：</span>
+				<select name="province" class="province"></select>
+				<select name="city" class="city"></select>
+				<select name="area" class="area"></select>
+				<p>
+					具体地址：<input type="text" class="spec-add">
+				</p>
+				<a class="confirm-add" href="">确定修改</a>
+			</form>
+		</div>
+		<div class="upload">
+			<span class="close">x</span>
+			<form action="data/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="mypic" /><br/>
+        <input type="submit" value="提交"/>
+    </form>
+		</div>
+		<div class="down">
+			<img src="images/logo/new_membership.png" alt="">
+		</div>
+	</div>
+	<div class="mask"></div>
+	<footer id="foot"></footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/usercenter.js"></script>	
+ </body>
+</html>

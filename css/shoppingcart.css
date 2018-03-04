@@ -1,0 +1,173 @@
+#main{
+	min-height:65vh;
+}
+.list{
+	font-size:20px;
+	width:1000px;
+	margin:0 auto;
+	margin:0 0 10px 0;
+}
+.clear-all{
+	display:none;
+	cursor:pointer;
+	background:url(../images/logo/trash.png) no-repeat;
+	padding-left:23px;
+	background-size:22px 22px;
+	position:absolute;
+	right:0;
+	top:5px;
+}
+.pro-list,.abc{
+	width:1000px;
+	position:relative;
+	margin:0 auto;
+}
+.abc>p{
+	border:1px solid #939898;
+	width:1000px;
+	padding:10px;
+	background:linear-gradient(to bottom,#E5E4E1,#BBBDBB)
+}
+ul.pro{
+	background:#E5E4E1;
+	width:1000px;
+	height:100px;
+	padding-left:10px;
+	border:1px solid #939898;
+	border-top:none;
+}
+li.image{
+	padding-top:10px;
+}
+li.image>img{
+	cursor:pointer;
+	display:block;
+	width:80px;
+	height:80px;
+}
+ul.pro li.title{
+	color:#333333;
+	text-align:left;
+}
+li.price{
+	color:#333333;
+}
+ul.pro>li{
+	float:left;
+	width:150px;
+	text-align:center;
+	height:100px;
+	line-height:100px;
+	
+}
+ul.pro>li.chk{
+	width:80px;
+}
+.count>span{
+	cursor:pointer;
+	/* display:inline-block; */
+	font-size:20px;
+	font-weight:bold;
+	padding:5px;
+}
+.count>input{
+	width:50px;
+	height:28px;
+	padding-left:5px;
+	border:1px solid #A9A9A9;
+}
+.count>input:focus{
+	outline:none;
+	border:1px solid #000;
+}
+.total{
+	
+	width:1000px;
+	text-align:right;
+	margin:10px auto;
+	padding:10px;
+	border:1px solid #BBBDBB;
+	background:linear-gradient(to bottom,#E5E4E1,#BBBDBB);
+}
+.total>span{
+	display:inline-block;
+	text-align:left;
+	padding:0 0 0 10px;
+	width:90px;
+	color:#B00E15;
+}
+.total>a{
+	display:inline-block;
+	width:45px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	background:#756E6E;
+	color:#fff;
+	border-radius:3px;
+}
+.total>a.active{
+	background:#451808;
+}
+.total>a:hover{color:#fff}
+.intr{
+	position:absolute;
+	left:200px;
+	bottom:12px;
+}
+.intr>li{
+	color:#3B000D;
+	font-weight:bold;
+	font-size:17px;
+	float:left;
+	width:80px;
+	padding-left:10px
+}
+.intr>li:nth-child(2){
+	margin:0 0 0 160px;
+}
+.intr>li:nth-child(3){
+	margin:0 0 0 66px;
+}
+.intr>li:nth-child(4){
+	margin:0 0 0 74px;
+}
+.intr>li:last-child{
+	margin:0 0 0 65px;
+}
+.totalprice>span{
+	color:#B00E15;
+}
+span.del{
+	cursor:pointer;
+}
+span.del:hover{
+	color:#684029;
+	text-decoration: underline;
+}
+.nothing{
+	background:url(../images/logo/gwc_k2_1.jpg) no-repeat center center;
+	width:1000px;
+	height:280px;
+	margin-top:20px;
+	
+}
+.hide{
+	display:none;
+}
+p.totalcount{
+	float:left;
+}
+p.totalcount>span{
+	color:#B00E15;
+}
+.mask{
+	width:100%;
+	height:100vh;
+	position:absolute;
+	top:0;
+	background:#000;
+	opacity:0.6;
+	display:none;
+	z-index:100;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ch-en">
+ <head>
+  <meta charset="UTF-8">
+  <title>欢迎来到flower❀whisper</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo/00575aeeddb20ce.jpg">
+ </head>
+ <body>
+  <p>
+		注册成功！<span>3</span>秒后跳转到主页
+	</p>
+	<p>
+		<a href="index.html">马上跳转&gt;&gt;</a>
+	</p>
+	<script>
+		var n = document.querySelector("p>span").innerHTML;
+		console.log(n);
+		var timer = setInterval(()=>{
+			n--;
+			document.querySelector("p>span").innerHTML = n;
+			if(n==0){
+				location.href = "index.html";
+			}
+		},1000)
+	</script>
+ </body>
+</html>

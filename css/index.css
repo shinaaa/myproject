@@ -1,0 +1,171 @@
+.floors{
+	margin:50px auto;
+	background:#fff;
+	padding:20px;
+	width:1050px;
+}
+.floors>ul{
+	margin-bottom:20px;
+	height:30px;
+	border-bottom:1px solid #BB9772;
+}
+/**产品详情**/
+.all-products{
+	width:1050px;
+}
+.all-products::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.p-details{
+	position:relative;
+	padding-bottom:10px;
+	border-bottom:1px dashed #BB9772;
+}
+.p-details>img{
+	width:200px;
+	border-radius:50%;	
+	overflow:hidden;
+	transition:all .3s linear;
+}
+
+.p-details>a.p-title{
+	opacity:0;
+	position:absolute;
+	top:0;left:0;
+	color:#494949;
+	border-radius:50%;
+	overflow:hidden;
+	width:200px;
+	height:220px;
+	background-color:rgba(240,240,240,0.3);
+	line-height:220px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	transition:all .3s linear;
+}
+.p-details>a.favs{
+	opacity:0;
+	position:absolute;
+	top:140px;
+	left:87px;
+	transition:all .3s linear;
+}
+.p-details>.p-desc{
+	display:block;
+	padding-top:10px;
+	padding-left:5px;
+	color:#BB9772;
+	width:220px;
+	height:30px;
+	font-size:14px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.products{
+	float:left;
+	padding:0 20px;
+}
+.products .p-price{
+	display:inline-block;
+	margin-left:20px;
+	margin-top:10px;
+	color:#BB9772;
+	font-size:14px;
+}
+.products .add-shopping{
+	display:inline-block;
+	cursor:pointer;
+	padding:0 3px;
+	margin-left:40px;
+	margin-top:10px;
+	color:#fff;
+	font-size:14px;
+	background:#643E28;
+}
+/*楼层滚动*/
+.floor-scroll>a{
+	display:block;
+	height:30;
+	line-height:30px;
+	padding:5px;
+}
+.floor-scroll>a+a{
+	border-top:1px dotted #684029;
+}
+a.active{
+	color:#C60A12;
+}
+.floor-scroll{
+	position:fixed;
+	left:0;
+	top:200px;
+	padding:0 2px;
+	font-size:14px;
+	background:#ddd;
+	text-align:center;
+	display:none;
+}
+.show{display:block;}
+#ddd{position:fixed;}
+.hide_div{
+	opacity:0;
+	transition:all .5s linear
+}
+.show_div{opacity:1;}
+
+/*********最新产品*********/
+.image{
+	width:272px;
+	margin:100px auto 80px;
+}
+.image>img{
+	display:block;
+	margin:0 auto
+}
+/**banner**/
+.banner{
+	min-width:1345px;
+	height:400px;
+	position:relative;
+}
+.img-box{
+	width:100%;
+	height:400px;
+	position:absolute;
+	overflow:hidden;
+}
+.img-box>li{
+	width:100%;
+	height:400px;
+	position:absolute;
+	opacity:0;
+	transition:all 1s linear;
+}
+.img-box>li.show{
+	opacity:1;
+}
+.dot{
+	position:absolute;
+	bottom:10px;
+	right:40%;
+}
+.dot>li{
+	cursor:pointer;
+	float:left;
+	margin-right:5px;
+	width:20px;
+	height:5px;
+	background:#BAE6FD;
+}
+.dot>li.active{
+	background:#D30625;
+}
+@media screen and (max-width: 1500px){
+	.img-box>li>img{
+		margin-left:-400px;
+	}
+}

@@ -1,0 +1,87 @@
+#head{
+	width:100%;margin:0 auto;
+	padding-top:10px;
+	border-bottom:1px solid #EAEAEA;
+}
+#container{
+	width:80%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+}
+#logo img{width:80px;}
+#login{margin-top:28px;}
+#login a.shoppingcart{
+	display:inline-block;
+	position:relative;
+	top:5px;
+	width:25px;height:25px;
+	background:url(../images/icon.png) -521px -70px;
+	background-size:320px;
+}
+#login p{
+	width:230px;
+	margin-right:10px;
+	color:#684029;
+	font-size:13px;
+}
+#login a{font-size:13px;}
+#login a.shopping-cart:hover{
+	background:url(../images/icon.png) -531px -60px;}
+#nav{
+	margin:30px auto 0;
+}
+.my_fav{
+	padding-left:20px;
+	background:url(../images/logo/fav_1.png) no-repeat;
+	background-size:18px 18px;
+}
+#nav>ul li{
+	float:left;
+	margin-left:15px;
+}
+#nav>ul li>a{
+	display:inline-block;
+	text-align:center;
+	padding:0 10px 8px 10px;
+	margin:0 20px;
+	position:relative;
+	transition:all .2s linear;
+}
+#nav>ul li>a::after{
+	content:"";
+	display:inline-block;
+	position:absolute;
+	height:2px;
+	width:100%;
+	background:#BB9772;
+	top:50px;
+	left:0;
+	right:0;
+	transform:scalex(0);
+	transition:all .2s linear;
+}
+#nav>ul li>a:hover::after{transform:scalex(1);}
+@media screen and (max-width:1345px){
+	#head{width:1345px;}
+}
+@media screen and (min-width:1650px){
+}
+@media screen and (min-width:1100px) and (max-width:1649px){
+	#nav>ul li{
+		margin-left:3px;
+	}
+	#nav>ul li>a{
+		padding:0 5px 8px;
+	}
+}
+@media screen and (max-width:1099px){
+	#nav>ul li{
+		margin-left:5px;
+	}
+	#nav>ul li>a{
+		padding:0 5px 8px 5px;
+		margin:0 8px;
+		}
+}
+	
