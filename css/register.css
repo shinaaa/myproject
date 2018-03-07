@@ -140,13 +140,13 @@ span.remember{
 }
 .login-reg{
     position: absolute;
-    right:385px;
-    top:360px;
+    right:387px;
+    top:365px;
     font-size:0.8em
 }
 .reg-login{
     position: absolute;
     font-size:0.8em;
-    right:385px;
-    bottom:90px
+    right:383px;
+    bottom:75px
 }

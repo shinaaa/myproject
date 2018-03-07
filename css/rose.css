@@ -87,18 +87,21 @@
 }
 .price{margin-left:10px;}
 .fav{
-	background:url(../images/logo/fav_1.png) no-repeat;
-	background-size:32%; 
+	background:url(../images/logo/fav_1.png) no-repeat left center/30%;
 	height:22px;
+	line-height:22px;
 	width:70px;
 	padding-left:25px;
 	margin-left:10px;
 	transition:all .3s;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
 }
 .fav1{
-	background:url(../images/logo/fav1.png) no-repeat;
-	background-size:32%;
+	background-image:url(../images/logo/fav1.png);
 	transition:all .3s;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
 }
 .shopping-cart>i,.buy-now>i{
 	display:inline-block;

@@ -31,6 +31,9 @@
 	height:55px;
 	margin:10px 40px;
 	padding:11px 0 0 13px;
+	/* display:table-cell;
+	vertical-align:middle;
+	text-align: center; */
 	border-radius:50%;
 	background:#494949;
 }

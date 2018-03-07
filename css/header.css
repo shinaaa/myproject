@@ -16,25 +16,23 @@
 	position:relative;
 	top:5px;
 	width:25px;height:25px;
-	background:url(../images/icon.png) -521px -70px;
-	background-size:320px;
+	background:url(../images/icon.png) -487px -65px/300px;
+	/* background-size:320px; */
 }
 #login p{
-	width:230px;
+	width:253px;
 	margin-right:10px;
 	color:#684029;
 	font-size:13px;
 }
 #login a{font-size:13px;}
-#login a.shopping-cart:hover{
-	background:url(../images/icon.png) -531px -60px;}
 #nav{
 	margin:30px auto 0;
 }
 .my_fav{
 	padding-left:20px;
-	background:url(../images/logo/fav_1.png) no-repeat;
-	background-size:18px 18px;
+	background:url(../images/logo/fav_1.png) no-repeat left center/24%;
+	/* background-size:18px 18px; */
 }
 #nav>ul li{
 	float:left;
