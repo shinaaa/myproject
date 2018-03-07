@@ -88,7 +88,22 @@
 				if(data.ok==0){
 					location = "login.html?back="+location.href;
 				}else{
-					var price = $(".price>span").html();
+					var $e = $(e.target);
+						if($("span.fav>span").html()=="收藏"){
+							$("span.fav>img").attr("src","images/logo/fav1.png");
+							$("span.fav>span").html("已收藏");
+							$("span.fav>img").css("transform","scale(1.2)");
+							setTimeout(()=>{
+								$("span.fav>img").css("transform","scale(1)");
+							},300)
+						}else{
+							$("span.fav>img").attr("src","images/logo/fav_1.png");
+							$("span.fav>span").html("收藏");
+							$("span.fav>img").css("transform","scale(1.2)");
+							setTimeout(()=>{
+								$("span.fav>img").css("transform","scale(1)");
+						},300)}
+					/* var price = $(".price>span").html();
 					var title = $("p.title").html();
 					var pic = $(".large-img").attr("src");
 					$.ajax({
@@ -111,7 +126,7 @@
 							setTimeout(()=>{
 								$("span.fav>img").css("transform","scale(1)");
 						},300)}
-					})
+					}) */
 				}
 			})
 

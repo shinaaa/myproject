@@ -9,8 +9,8 @@ $(()=>{
       data:{kw:kws,pno:pno},
       dataType:"json"
     }).then(data=>{
-      console.log(kws)
-      //console.log(data);
+      //console.log(kws)
+      console.log(data);
       var html = "";
       for(var i=0;i<data.data.length;i++){
         html+=`
@@ -165,25 +165,14 @@ $(()=>{
         alert("请先登录");
         location = "login.html?back="+location.href
       }else{
-        $e = $(e.target);
-        var price = $e.parent().prev().children().html().slice(2);
-        var title = $e.parent().siblings(".ptitle").html();
-        var rid = $e.parent().siblings(".img-container").find(".pro-detail").data("rid");
-        var pic = $e.parent().siblings(".img-container").find(".pro-detail").find(".pimg").attr("src");
-        $.ajax({
-          type:"post",
-          url:"data/user/myfav.php",
-          data:{rid:rid,title:title,price:price,pic:pic},
-          dataType:"json"
-        }).then(data=>{
-          var html = "";
-          $e.toggleClass("fav1");
-            if($e.hasClass("fav1"))
+        $e = $(e.target)
+        var html = "";
+        $e.toggleClass("fav1");
+        if($e.hasClass("fav1"))
           $e.html("已收藏")
-            else
+        else
           $e.html("收藏")
-        })
-      }
+      } 
     })
   })
   //回到顶部

@@ -17,7 +17,7 @@ $count=count($rows);//获得商品总数目
 if(!$pno) $pno=1;
 $sql.=" limit ".($pno-1)*$pageSize.",$pageSize";//($pno-1)*$pageSize: 每一页从哪一个商品开始显示
 $arr = mysqli_fetch_All(mysqli_query($conn,$sql),1);
-$fav_rid = -1;
+/* $fav_rid = -1;
 session_start();
 @$uid = $_SESSION["uid"];
 if($uid){
@@ -27,14 +27,13 @@ if($uid){
 	if($rows){
 		$fav_rid = $rows;
 	}
-}
+} */
 //echo json_encode($fav_rid);
 $output=[
   "pageSize"=>$pageSize,
   "totalCount"=>$count,
   "totalPage"=>ceil($count/$pageSize),//计算总页数
   "pno"=>$pno,
-	"fav_rid"=>$fav_rid,
   "data"=>$arr
 ];
 echo json_encode($output);
